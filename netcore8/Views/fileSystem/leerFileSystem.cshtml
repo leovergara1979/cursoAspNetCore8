@@ -1,0 +1,41 @@
+﻿@using netcore8.clases
+@model List<archivoCLS>
+
+@{
+    ViewData["Title"] = "leerFileSystem";
+}
+
+<h1>leerFileSystem</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre archivo</th>
+            <th>Extensión archivo</th>
+            <th>Operación</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.nombreArchivo</td>
+                <td>@obj.extension</td>
+                <td>
+                    <button class="btn btn-primary" onclick="descargar('@obj.nombreArchivo', '@obj.extension')">
+                        <i class="bi bi-cloud-arrow-down"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@* @section Scripts{
+    <script src="~/js/leerfilesystem.js" asp-append-version="true"></script>
+
+} *@
+
+<script src="~/js/leerfilesystem.js" asp-append-version="true"></script>
