@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dtdS0ifHLBAsdw/CWcEIRmAw/2ivXwpEN3YFVA0fstRLqhd+GR08o5cBXwRI1wI6vOEuQMf22WhX77pIsfAZrA==",
+  "dgSpecHash": "2cwClE/edhGYwkZnZ8ODGcIEpuDmy+E4edjhWCBXvmJ8SBoQi5Y5KaCR3f1Rkwh4FWjKEm38IYwj6+YgChq9jA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leonardo\\source\\repos\\netcore8\\netcore8\\netcore8.csproj",
+  "projectFilePath": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\netcore8.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
