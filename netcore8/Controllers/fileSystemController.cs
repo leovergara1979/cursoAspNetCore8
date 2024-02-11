@@ -54,5 +54,27 @@ namespace netcore8.Controllers
 
         }
 
+        public int subirArchivo(IFormFile archivo)
+        {
+            try
+            {
+                string rutaProyecto = _webHostEnvironment.ContentRootPath;
+                string rutaCompleta = Path.Combine(rutaProyecto, "Archivos");
+                string nombreArchivo = archivo.FileName;
+                string rutaFinal = Path.Combine(rutaCompleta, nombreArchivo);
+                using (FileStream fs = new FileStream(rutaFinal, FileMode.Create))
+                {
+                    archivo.CopyTo(fs);
+                }
+
+                return 1;
+            }
+            catch (Exception e)
+            {
+                return 0;
+            }
+
+        }
+
     }
 }
