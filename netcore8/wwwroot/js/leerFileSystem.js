@@ -16,12 +16,11 @@ function descargar(nombreArchivo, ext) {
         })
 }
 
-function subir() {
+let subir = () => {
 
     let archivo = document.getElementById('fupArchivo').files[0];
-
-
     let frm = new FormData();
+
     frm.append('archivo', archivo)
 
     fetch(`/fileSystem/subirArchivo/`, {
