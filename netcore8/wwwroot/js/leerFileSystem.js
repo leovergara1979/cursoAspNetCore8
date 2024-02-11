@@ -16,3 +16,25 @@ function descargar(nombreArchivo, ext) {
         })
 }
 
+function subir() {
+
+    let archivo = document.getElementById('fupArchivo').files[0];
+
+
+    let frm = new FormData();
+    frm.append('archivo', archivo)
+
+    fetch(`/fileSystem/subirArchivo/`, {
+        method: 'POST',
+        body: frm,
+
+    })
+        .then(res => res.text())
+        .then(res => {
+            (res == 1)
+                ? alert('Exito')
+                : alert('Error');
+        })
+
+
+}
