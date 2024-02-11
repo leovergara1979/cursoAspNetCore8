@@ -1,4 +1,8 @@
 ﻿
+function Evento_CargaInicialPagina(evento) {
+
+    alert('inicio');
+}
 
 function descargar(nombreArchivo, ext) {
 
@@ -31,9 +35,18 @@ let subir = () => {
         .then(res => res.text())
         .then(res => {
             (res == 1)
-                ? alert('Exito')
+                ? (alert('Exito'))
                 : alert('Error');
         })
 
+
+}
+
+let cargarTabla = () => {
+
+    fetch(`/fileSystem/leerFileSystem/`, {
+        method: 'POST',
+
+    })
 
 }
