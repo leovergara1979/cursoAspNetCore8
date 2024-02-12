@@ -5,15 +5,18 @@
     ViewData["Title"] = "leerFileSystem";
 }
 
-<h1>leerFileSystem</h1>
+<h1>Tabla de archivos</h1>
 
 <div class="d-flex justify-content-center">
     <input type="file" id="fupArchivo"/>
     <button style="margin-left:1em" onclick="subir()" class="btn btn-primary">Subir</button>
+</div>
+
+<div id="divTabla">
 
 </div>
 
-<table class="table mt-3">
+@* <table class="table mt-3">
     <thead>
         <tr>
             <th>Nombre archivo</th>
@@ -37,7 +40,7 @@
             </tr>
         }
     </tbody>
-</table>
+</table> *@
 
 @* @section Scripts{
     <script src="~/js/leerfilesystem.js" asp-append-version="true"></script>

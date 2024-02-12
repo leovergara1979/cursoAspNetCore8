@@ -15,6 +15,12 @@ namespace netcore8.Controllers
 
         public IActionResult leerFileSystem()
         {
+
+            return View();
+        }
+
+        public List<archivoCLS> listarArchivos()
+        {
             string rutaProyecto = _webHostEnvironment.ContentRootPath;
             string rutaCompleta = Path.Combine(rutaProyecto, "Archivos");
 
@@ -31,9 +37,8 @@ namespace netcore8.Controllers
                 });
 
             }
-            return View(lista);
+            return lista;
         }
-
         public IActionResult subirFileSystem()
         {
             return View();

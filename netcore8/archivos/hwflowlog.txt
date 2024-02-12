@@ -1,7 +1,0 @@
-Manufacturer:Huawei Technologies Co., Ltd;
-ProductClass:HG8145X6;
-SerialNumber:48575443C734F1AA;
-IP:10.189.89.205;
-HWVer:1CDD.A;
-SWVer:V5R022C00S225;
-

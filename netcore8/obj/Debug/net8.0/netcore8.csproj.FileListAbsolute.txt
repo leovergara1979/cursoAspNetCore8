@@ -235,4 +235,3 @@ C:\Users\Leonardo\source\repos\cursoAspNetCore8\netcore8\bin\Debug\net8.0\runtim
 C:\Users\Leonardo\source\repos\cursoAspNetCore8\netcore8\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\Leonardo\source\repos\cursoAspNetCore8\netcore8\obj\Debug\net8.0\netcore8.csproj.AssemblyReference.cache
 C:\Users\Leonardo\source\repos\cursoAspNetCore8\netcore8\obj\Debug\net8.0\netcore8.csproj.CopyComplete
-C:\Users\Leonardo\source\repos\cursoAspNetCore8\netcore8\bin\Debug\net8.0\archivos\web.config
