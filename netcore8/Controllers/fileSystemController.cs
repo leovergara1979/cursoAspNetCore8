@@ -81,5 +81,24 @@ namespace netcore8.Controllers
 
         }
 
+        public int eliminarArchivo(string nombreArchivo)
+        {
+            try
+            {
+                string rutaProyecto = _webHostEnvironment.ContentRootPath;
+                string rutaCompleta = Path.Combine(rutaProyecto, "Archivos", nombreArchivo);
+
+                if(System.IO.File.Exists(rutaCompleta))
+                {
+                    System.IO.File.Delete(rutaCompleta);
+                }
+                return 1;
+            }
+            catch(Exception e)
+            {
+                return 0;
+            }
+
+        }
     }
 }

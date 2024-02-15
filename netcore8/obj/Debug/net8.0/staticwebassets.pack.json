@@ -13,12 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\alerta.js",
+      "PackagePath": "staticwebassets\\js\\alerta.js"
+    },
+    {
       "Id": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\leerFileSystem.js",
       "PackagePath": "staticwebassets\\js\\leerFileSystem.js"
     },
     {
       "Id": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\sweetAlert2.js",
+      "PackagePath": "staticwebassets\\js\\sweetAlert2.js"
     },
     {
       "Id": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\lib\\bootstrap\\LICENSE",

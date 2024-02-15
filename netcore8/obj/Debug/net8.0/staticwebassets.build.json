@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ouJJOuPve4xG3UcuaLv7smVNKwLpMcIcXqIBjTqzBfI=",
+  "Hash": "XD2pL1ynzHYcfy2TB13Mn6Gz2zsZbVEx1Bc2k0kRqjw=",
   "Source": "netcore8",
   "BasePath": "_content/netcore8",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\alerta.js",
+      "SourceId": "netcore8",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\",
+      "BasePath": "_content/netcore8",
+      "RelativePath": "js/alerta.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\alerta.js"
+    },
+    {
       "Identity": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\leerFileSystem.js",
       "SourceId": "netcore8",
       "SourceType": "Discovered",
@@ -167,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\js\\sweetAlert2.js",
+      "SourceId": "netcore8",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\",
+      "BasePath": "_content/netcore8",
+      "RelativePath": "js/sweetAlert2.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sweetAlert2.js"
     },
     {
       "Identity": "C:\\Users\\Leonardo\\source\\repos\\cursoAspNetCore8\\netcore8\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

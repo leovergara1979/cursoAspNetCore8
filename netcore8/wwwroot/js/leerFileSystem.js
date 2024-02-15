@@ -18,6 +18,13 @@ let descargar = async (nombreArchivo, ext) => {
 
 let subir = async () => {
 
+    let valor = document.getElementById('fupArchivo').value;
+
+    if (valor == '') {
+        alertaError('error', 'Debe seleccionar un archivo');
+        return;
+    }
+
     let archivo = document.getElementById('fupArchivo').files[0];
     let frm = new FormData();
     frm.append('archivo', archivo)
@@ -29,7 +36,7 @@ let subir = async () => {
 
     let res = await llamada.text();
     (res == 1)
-        ? (alert('Exito'), listarArchivos())
+        ? (alertaExito('Se subió el archivo correctamente'), listarArchivos(), document.getElementById('fupArchivo').value='' )
         : alert('Error');
 }
 
@@ -49,8 +56,6 @@ let listarArchivos = async () => {
                                 <th>Operación</th>
                             </tr>
                         </thead>
-                    
-
                     <tbody>`
 
     let obj;
@@ -62,7 +67,8 @@ let listarArchivos = async () => {
                             <td>${i+1}</td>
                             <td>${obj.nombreArchivo}</td>
                             <td>${obj.extension}</td>
-                            <td><button class="btn btn-primary" onclick="descargar('${obj.nombreArchivo}', '${obj.extension}')"><i class="bi bi-cloud-arrow-down"></i></button></td>
+                            <td><button class="btn btn-primary" onclick="descargar('${obj.nombreArchivo}', '${obj.extension}')"><i class="bi bi-cloud-arrow-down"></i></button>
+                                <button class="btn btn-danger"  onclick="eliminar('${obj.nombreArchivo}', '${obj.extension}')"><i class="bi bi-trash"></i></button></td>
                         </tr>`
     }
     contenido +=`</tbody></table>`;
@@ -70,3 +76,28 @@ let listarArchivos = async () => {
 
 }
 
+let eliminar = async (nombre, extension) => {
+
+
+    alertaConfirmacion('¿Desea eliminar el archivo?',async function(){
+
+        let llamada = await fetch(`/fileSystem/eliminarArchivo/?nombreArchivo=${nombre}.${extension}`);
+        let data = await llamada.json();
+
+        (data == 1)
+            ? (alertaAviso('Se elimino correctamente.'), listarArchivos())
+            : alertaError('error', 'Ha ocurrido algo mal.');
+
+
+    });
+
+    //let llamada = await fetch(`/fileSystem/eliminarArchivo/?nombreArchivo=${nombre}.${extension}`);
+    //let data = await llamada.json();
+
+    //(data == 1)
+    //    ? alertaAviso('Se elimino correctamente.')
+    //    : alertaError('error', 'Ha ocurrido algo mal.');
+
+}
+
+    
